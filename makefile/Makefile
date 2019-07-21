@@ -13,6 +13,7 @@ calc:$(obj)
 %.o:%.c
 	$(CC) -c $< $(CFLAGS) $(CPPFLAGS) -o $@
 
+.PHONY : clean
 clean:
 	-rm -f $(target)
 	-rm -f *.o
